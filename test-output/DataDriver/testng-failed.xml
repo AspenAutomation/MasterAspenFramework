@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DataDriver]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="com.Aspen.listeners.CustomListeners"/>
+  </listeners>
+  <test name="checkEmailfield(failed)">
+    <classes>
+      <class name="com.Aspen.testcases.TestEmailField">
+        <methods>
+          <include name="checkEmailfield"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Aspen.testcases.TestEmailField -->
+    </classes>
+  </test> <!-- checkEmailfield(failed) -->
+</suite> <!-- Failed suite [DataDriver] -->

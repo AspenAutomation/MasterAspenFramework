@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DataDriver">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.Aspen.listeners.CustomListeners" />
+	</listeners>
+
+
+	<test name="testEmailfield">
+		<classes>
+			<class name="com.Aspen.testcases.TestEmailField" />
+		</classes>
+	</test> <!-- testEmailfield -->
+
+	<test name="loginTest">
+		<classes>
+			<class name="com.Aspen.testcases.LoginTest" />
+		</classes>
+	</test> <!-- loginTest -->
+
+	<test name="feedback">
+		<classes>
+			<class name="com.Aspen.testcases.Feedback" />
+		</classes>
+	</test> <!-- feedback -->
+
+	<test name="testClearFunctionality">
+		<classes>
+			<class name="com.Aspen.testcases.TestClearFunctionality" />
+		</classes>
+	</test> <!-- testClearFunctionality -->
+	
+	
+<test name="registerACashCourse">
+		<classes>
+			<class name="com.Aspen.testcases.RegisterACashCourse" />
+		</classes>
+	</test> <!-- registerACashCourse -->
+	
+</suite> <!-- DataDriver -->
